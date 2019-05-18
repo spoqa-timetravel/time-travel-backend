@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee");
+body {
+  background-color: #212121;
+  font-family: 'Bungee', cursive;
+}
+
+.numbers.minutes {
+  animation: time2 1s infinite linear;
+}
+
+.numbers.hours {
+  animation: time 1s infinite linear;
+}
+
+.numbers.seconds {
+  animation: time 1s infinite linear;
+}
+
+@keyframes time2 {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes time {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.time {
+  height: 350px;
+  width: 350px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.time ul {
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 500px;
+}
+.time ul li {
+  position: absolute;
+  height: 50%;
+  width: 20px;
+  transform-origin: bottom;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 40px;
+}
+.time ul li:nth-child(1) {
+  transform: rotate(30deg);
+}
+.time ul li:nth-child(2) {
+  transform: rotate(60deg);
+}
+.time ul li:nth-child(3) {
+  transform: rotate(90deg);
+}
+.time ul li:nth-child(4) {
+  transform: rotate(120deg);
+}
+.time ul li:nth-child(5) {
+  transform: rotate(150deg);
+}
+.time ul li:nth-child(6) {
+  transform: rotate(180deg);
+}
+.time ul li:nth-child(7) {
+  transform: rotate(210deg);
+}
+.time ul li:nth-child(8) {
+  transform: rotate(240deg);
+}
+.time ul li:nth-child(9) {
+  transform: rotate(270deg);
+}
+.time ul li:nth-child(10) {
+  transform: rotate(300deg);
+}
+.time ul li:nth-child(11) {
+  transform: rotate(330deg);
+}
+.time ul li:nth-child(12) {
+  transform: rotate(360deg);
+}
+.time ul.seconds {
+  background-color: #2E282A;
+  height: 60%;
+  width: 60%;
+  z-index: 3;
+  color: #AEF3E7;
+  box-shadow: 0px 0px 5px black;
+}
+.time ul.minutes {
+  height: 80%;
+  width: 80%;
+  background-color: #EFD09E;
+  color: #272727;
+  z-index: 2;
+  box-shadow: 0px 0px 5px #a6711b;
+}
+.time ul.hours {
+  height: 100%;
+  width: 100%;
+  background-color: #004E64;
+  z-index: 1;
+  color: #ffffff;
+  box-shadow: 0px 0px 5px black;
+}
+.time.blow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 1px solid #2E282A;
+  border-radius: 500px;
+}
+.time.blow::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 50%;
+  opacity: 0.2;
+  width: 0px;
+  border: 2px solid black;
+  z-index: 55;
+  border-radius: 50px;
+}
