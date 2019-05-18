@@ -1,15 +1,44 @@
 <html>
 
 <head>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="./static/js/script.js"></script>
-    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="./script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<div class="time blow" id="clock">
-    <ul class="numbers seconds"></ul>
-    <ul class="numbers minutes"></ul>
-    <ul class="numbers hours"></ul>
-</div>
+
+<body>
+  <div class="app">
+      <div class="header">TIMETRAVEL</div>
+      <div style="margin: 40% auto;">
+          <div id="year" class="time" style="width: 250px; height: 250px;">
+              <img class="background" src="./assets/img-gra-one.png" />
+              <div class="content">
+                <div class="data">9999</div>
+                <div class="label">YEAR</div>
+              </div>
+              <div class="moon"></div>
+              <div class="moon big"></div>
+            </div>
+            <div id="hour" class="time" style="width: 200px; height: 200px;">
+              <img class="background" src="./assets/img-gra-two.png" />
+              <div class="content">
+                <div class="data">24</div>
+                <div class="label">HOURS</div>
+              </div>
+              <div class="moon"></div>
+            </div>
+            <div id="minute" class="time" style="width: 170px; height: 170px;">
+              <img class="background" src="./assets/img-gra-three.png" />
+              <div class="content">
+                <div class="data">60</div>
+                <div class="label">MINUTES</div>
+              </div>
+              <div class="moon opposite"></div>
+              <div class="moon big"></div>
+            </div>
+      </div>
+      <button id="restart">RESTART</button>
+  </div>
+</body>
 
 </html>
